@@ -6,5 +6,6 @@
         "italic": true
       }
     }
-  }
+  },
+  "workbench.startupEditor": "readme"
 }
