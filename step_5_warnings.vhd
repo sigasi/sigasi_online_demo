@@ -4,8 +4,9 @@ use IEEE.numeric_std.all;
 
 entity dut is
 	----------------------------------------------------------------------------
-	-- If you arrived here via **Open Declaration**, you can navigate back to
-	-- your previous location by pressing **Ctrl+Alt+-**.
+	-- If you arrived here via **Go to Definition**, you can navigate back to
+	-- your previous location by pressing **Alt+Left** on Windows or
+	-- **Alt+Ctrl+-** on Linux.
 	----------------------------------------------------------------------------
 	generic(
 		iterations : integer := 10

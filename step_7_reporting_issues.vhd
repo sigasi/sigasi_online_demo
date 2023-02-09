@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------------------------------------------------
--- If you got this far, you have learned the basics about working with Sigasi in VS Code.
+-- If you got this far, you have learned the basics about working with Sigasi Studio for VS Code.
 --
 -- Congratulations!
 --
@@ -15,8 +15,4 @@
 -- `info` is usually enough information for us.
 --
 -- To see all the tracing logs you should open the settings and set `Sigasi>trace:server` to `verbose`.
---
--- It's also possible to export a `project.client.json` and a `project.server.json` which will describe the current
--- project's state on the client and server side. To do this open the `Command Palette (Ctrl+Shift+P)`
--- and type `Sigasi: Get the current project description`.
 ------------------------------------------------------------------------------------------------------------------------

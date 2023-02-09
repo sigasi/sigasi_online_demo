@@ -1,40 +1,47 @@
-------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 -- Welcome! --
-------------------------------------------------------------------------------------
--- You made a great choice installing the Sigasi extension, and now you are ready to
--- unlock its power.
+--------------------------------------------------------------------------------
+-- You made a great choice opening the online version of Sigasi. You are now
+-- ready to explore most of the functionalities that also come in the Sigasi
+-- Studio extension for VS Code.
 --
--- This demo file will guide you on your first steps. In a few minutes you will
--- have learned the basics of how Sigasi Studio helps you work with VHDL files.
+-- This online workspace will live for a limited time and there is no
+-- persistence. You can use the workspace to explore this Sigasi demo project,
+-- or you can use git to clone your own project, make changes, and commit your
+-- changes before this workspace expires.
+--
+-- If you wish to explore the demo project, please read on.
+-- This tutorial project will guide you on your first steps. In a few minutes
+-- you will have learned the basics of how Sigasi helps you work with HDL files.
 --
 -- Just follow the comments below that are marked 'TODO'.
-------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 -- NOTE: You can download extensions that change keybinds of VSCode to fit an editor
---       of your choice e.g. Eclipse Keymap, IntelliJ IDEA Keybindings, Vim,...
---       In this tutorial we'll use the default VSCode keybindings.
-------------------------------------------------------------------------------------
--- NOTE: Creating a project will generate a **language_version.json** and a
---       **library_mapping.json** which are required by the server.
+--       of your choice: Eclipse Keymap, IntelliJ IDEA Keybindings, Vim,...
+--       In this tutorial we'll use the default VS Code keybindings.
+--------------------------------------------------------------------------------
+-- NOTE: Creating a project will generate a **.project** and a
+--       **.library_mapping.xml** which are required by the server.
 --       These should be checked into your version control system.
---       When you change workspace or folder settings these will be saved in
---       ".vscode/settings.json". This file should thus also be checked in.
-------------------------------------------------------------------------------------
+--       When you change project or folder settings these will be saved in
+--       ".settings". This folder should thus also be checked in.
+--------------------------------------------------------------------------------
 --
 --
-------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 -- TODO The Command Pallete is your go to for any command you want to execute
 --      in VSCode. You can open it by pressing **Ctrl+Shift+P**.
-------------------------------------------------------------------------------------
--- TODO "Configure license"
---      The first thing you should do is configure your license.
---      Use the Command Palette to ** Open Settings(UI)** and fill in the
---      **Sigasi:Path To License** option.
 ------------------------------------------------------------------------------------
 -- TODO "Format"
 --      Sigasi Studio can clean up, or format, your VHDL code. This can greatly
 --      enhance the readability of your code. Open the Command Pallete and type
 --      "Format Document" or "Format Selection". You can do the same by pressing
---      **Ctrl+Shift+I**.
+--      **Shift+Alt+F**.
+------------------------------------------------------------------------------------
+-- TODO "Project View"
+--      This will be the place to go when exploring and configuring your project.
+--      You can change the library of a file or folder, open the Preference View
+--      and set your VHDL version by right-clicking the project name.
 ------------------------------------------------------------------------------------
 
 library ieee;use ieee.std_logic_1164.all;

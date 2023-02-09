@@ -3,6 +3,13 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 use work.constants.all;
+
+---------------------------------------------------------------------------
+-- TODO "Go to Implementations"
+--      Right-click the name of the entity in the line below,
+--      and select "Go to Implementations". This will jump to the
+--      architecture that implements this entity.
+---------------------------------------------------------------------------
 entity testbench is
 end entity;
 
@@ -25,10 +32,10 @@ architecture STR of testbench is
 
 begin
 	---------------------------------------------------------------------------
-	-- TODO "Open declaration"
+	-- TODO "Go to Definition"
 	--      In the line below, place your cursor on the word `dut` and press
 	--      **F12** or **Ctrl+Left Click** it. This takes you to
-    --      the declaration of the entity `dut`.
+	--      the declaration of the entity `dut`.
 	---------------------------------------------------------------------------
 
 	dut_instance : entity work.dut(RTL)

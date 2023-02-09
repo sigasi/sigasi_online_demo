@@ -6,8 +6,8 @@
 --      On the line below, Sigasi reports an unknown library `my_lib`, which
 --      results in an unknown entity in the `clock_inst` instantiation.
 --
---      Right click the `my_lib` folder in the **Explorer** and select
---      **Set To Library > New library...** and type **my_lib**. This tells
+--      Right click the `my_lib` folder in the **Project View** and select
+--      **Set Library > New Library...** and type **my_lib**. This tells
 --      Sigasi to compile all files in the `my_lib` folder to the `my_lib` library.
 --
 --      Note that the errors below get resolved.
