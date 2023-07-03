@@ -16,3 +16,13 @@
 --
 -- To see all the tracing logs you should open the settings and set `Sigasi>trace:server` to `verbose`.
 ------------------------------------------------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+-- NEXT STEPS
+--
+-- Now browse folders tb, vhdl and vlog and open the design files in those folders.
+-- Note that tb folder has the file testbench.sv which instatiates a module named cmd_gen.
+-- Also view the components that are instatiated by cmd_gen module and go through the TODOs in those design files.
+------------------------------------------------------------------------------------------------------------------------

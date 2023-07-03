@@ -4,6 +4,10 @@ parameter g_shift_reg_length  = 24;
 parameter g_input_operation   = 3'b001;
 parameter g_output_inversion  = 0;
 
+	// TODO "Set as Top Level"
+	//      In the line below, right click on the word cmd_gen and 
+	//      click "Set a Top Level" in the pop-up menu.
+	//      Note that "Hierarchy View" is now populated and browse the hierarchy there.
 module cmd_gen(
     input clk,
     input rst_n,
@@ -38,7 +42,7 @@ module cmd_gen(
 
 	// TODO "Rename"
 	//      Press **F2** on `nReset` below and rename it to `rst_n`.
-    //      And then, , place your cursor on the word `cmd_fsm` and press
+    //      And then, place your cursor on the word `cmd_fsm` and press
     //      **F12** or **Ctrl+Left Click** it. This takes you to the 
     //      declaration of the module `cmd_fsm`. Observe that the nReset is
     //      now also renamed in the module.
