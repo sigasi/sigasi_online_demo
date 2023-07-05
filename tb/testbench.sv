@@ -11,8 +11,7 @@ module testbench;
 
     // TODO "Rename"
     //      Press **F2** on `clk` below and rename it to `clock`. 
-    //      Observe that the port name of cmd_gen is also changed in the cmd_gen.v,  
-    //      whereas the port name of the clock_generator is not. 
+    //      Observe that the port name of cmd_gen is also changed in the cmd_gen.v.   
     wire clk;
 
  
@@ -68,17 +67,6 @@ module testbench;
         $stop;
     end
 
-    clock_generator #(
-    .period(`PERIOD)
-    ) clock_generator_instance(
-    .clk(clk)
-    );
-
-    // TODO "Go to Definition"
-    //      In the line below, place your cursor on the word `cmd_gen` and press
-    //      **F12** or **Ctrl+Left Click** it. This takes you to
-    //      the declaration of the module `cmd_gen`. 
-
     cmd_gen cmd_gen_instance(
         .clk,
         .rst_n,
@@ -92,5 +80,13 @@ module testbench;
         .stage4
     );
 
+    // TODO "Content Assist"
+    //      On the line below, press **Ctrl+Space** and select "clock generator - Instantiate design unit" 
+    //      to instantiate a VHDL component inside this SystemVerilog testbench.  
+
+
 
 endmodule;
+// TODO "Next Step"
+//      You can now go to the final step. 
+//      Open the file final_step_reporting_issues.vhd

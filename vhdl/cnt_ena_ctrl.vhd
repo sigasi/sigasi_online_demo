@@ -7,7 +7,9 @@ entity cnt_ena_ctrl is
       ----------------------------------------------------------------------------
 	-- If you arrived here via **Go to Definition**, you can navigate back to
 	-- your previous location by pressing **Alt+Left** on Windows or
-	-- **Alt+Ctrl+-** on Linux.
+	-- **Alt+Ctrl+-** on Linux. After you navigate back, come back to this file 
+      -- again and continue with the TODOs below. Notice that this file is located
+      -- in the 'vhdl' folder.
 	----------------------------------------------------------------------------
       generic(
             g_shift_reg_length : integer range 7 to 32        := 24;
@@ -92,4 +94,7 @@ begin
       end process p_shift_reg;
 
 end RTL;
-
+--------------------------------------------------------------------------------
+-- TODO "Next Step"
+--      Open the file testbench.sv in the 'tb' folder.  
+--------------------------------------------------------------------------------

@@ -4,9 +4,7 @@ use IEEE.numeric_std.all;
 
 entity dut is
 	----------------------------------------------------------------------------
-	-- If you arrived here via **Go to Definition**, you can navigate back to
-	-- your previous location by pressing **Alt+Left** on Windows or
-	-- **Alt+Ctrl+-** on Linux.
+	-- If you arrived here via **Go to Definition**, congratulations! 
 	----------------------------------------------------------------------------
 	generic(
 		iterations : integer := 10
@@ -73,3 +71,8 @@ begin
 	end process COUNTER;
 
 end architecture RTL;
+--------------------------------------------------------------------------------
+-- TODO "Next Step"
+--      You can now go ahead and continue from step 6. 
+--      Open the file step_6_libraries.vhd 
+--------------------------------------------------------------------------------

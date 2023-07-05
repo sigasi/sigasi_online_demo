@@ -84,6 +84,19 @@ if (rst == '1') then
 --      behind the "ri" press **Ctrl+Space** and select "rising_edge".
 --------------------------------------------------------------------------------
 elsif ri(clk) then
+
+--------------------------------------------------------------------------------
+-- TODO "Content Asist"
+--      Sigasi Studio can help you to type VHDL code faster. On the line below,
+--      press **Ctrl+Space** and select "case state - Case Statement over..." 
+--      to insert a case statement template using the enum type signal that 
+--      yields a skeleton FSM.
+--------------------------------------------------------------------------------
+    
+
+
+    
+
 --------------------------------------------------------------------------------
 -- TODO "Quick Outline"
 --      If you've forgotten what `data_out` looks like by now you can go back
@@ -96,3 +109,8 @@ end if;
 end process name;
 
 end architecture RTL;
+--------------------------------------------------------------------------------
+-- TODO "Next Step"
+--      You can now go ahead and continue from step 2. 
+--      Open the file step_2_sv.sv 
+--------------------------------------------------------------------------------

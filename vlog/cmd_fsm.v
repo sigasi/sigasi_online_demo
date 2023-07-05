@@ -47,7 +47,7 @@ module cmd_fsm (
 
 	// TODO "Warnings"
 	//      The net *stage5_i* is never used. Sigasi knows this and
-	//      adds a warning for you. 
+	//      adds a warning for you Hover over stage5_i and read the warning message. 
 	wire        stage5_i; 
 
 	// TODO "Syntax error"
@@ -67,6 +67,10 @@ module cmd_fsm (
 	always @(posedge clk or negedge nReset)
 	  	if (!nReset)
 	    	begin 
+				// TODO "Hover"
+				//      In the lines below, hover your mouse over the different objects. 
+				//      Notice how the data type, value and comments of the objects shows up in
+				//      a pop-up.
 	        	c_state  <= S_IDLE; 
 				cmd_type <= C_CMD_IDLE;
 	    	end
@@ -93,11 +97,6 @@ module cmd_fsm (
 						c_state  <= S_READ;
 						cmd_type <= C_CMD_RD;
 					end
- 
-				// TODO "Hover"
-				//      In the lines below, hover your mouse over the different objects. 
-				//      Notice how the data type, value and comments of the objects shows up in
-				//      a pop-up.
 
 				S_READ:
 				if (stage2_i == 1'b1 &&  clk_cnt_i > C_MID_STAGE)
@@ -136,4 +135,7 @@ module cmd_fsm (
  
 	end
 
-endmodule
+endmodule 
+
+// TODO "Next Step" 
+//      Open the file cmd_gen.v in the 'vlog' folder.  

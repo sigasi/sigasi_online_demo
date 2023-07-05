@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------
 -- TODO "Library mapping"
---      Sigasi Studio fully supports VHDL's library mechanism, but it needs to
---      know where the library sources are.
+--      Sigasi Studio fully supports VHDL's library mechanism. For that it needs
+--      to know where the library sources are.
 --
 --      On the line below, Sigasi reports an unknown library `my_lib`, which
 --      results in an unknown entity in the `clock_inst` instantiation.
@@ -29,3 +29,7 @@ begin
 		generic map(PERIOD => 20 ns)
 		port map(clk => clk);
 end architecture STR;
+--------------------------------------------------------------------------------
+-- TODO "Next Step" 
+--      Open the file cmd_fsm.v in the vlog folder 
+--------------------------------------------------------------------------------
