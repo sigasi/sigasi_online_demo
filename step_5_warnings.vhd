@@ -64,6 +64,11 @@ begin
 					data_out <= result;
 					valid    <= '1';
 					state    := idle;
+				----------------------------------------------------------------------------
+				-- TODO "Warnings"
+				--      Sigasi adds another warning because of a *dead state* in the line below.
+				--      Replace "null" with an actual transition to resolve the warning. 
+				----------------------------------------------------------------------------	
 				when waiting =>
 					null;
 			end case;
@@ -73,6 +78,6 @@ begin
 end architecture RTL;
 --------------------------------------------------------------------------------
 -- TODO "Next Step"
---      You can now go ahead and continue from step 6. 
+--      You can now continue to step 6. 
 --      Open the file step_6_libraries.vhd 
 --------------------------------------------------------------------------------

@@ -1,3 +1,8 @@
+
+// TODO Open the Command Palette by pressing **Ctrl+Shift+P**, start typing 
+//      "Sigasi: Add Verilog/SystemVerilog Support" and select it from the list when it appears.  
+//      This will make the project a mixed language project.
+
 // TODO "Setup include path"
 //      "included.svh" is located in the "include" folder but the include path has not yet
 //      been configured so you're getting an error here. To configure this open the preference page
@@ -23,5 +28,5 @@ module svModule#(
 endmodule
  
 // TODO "Next Step"
-//      You can now go ahead and continue from step 3. 
-//      Close the preprocessor and open the file step_3_find_references.vhd  
+//      You can now continue to step 3. 
+//      Close the *Preprocessor View* and open the file step_3_find_references.vhd  

@@ -19,6 +19,6 @@ package constants is
 end package constants;
 --------------------------------------------------------------------------------
 -- TODO "Next Step"
---      You can now go ahead and continue from step 4. 
---      Open the file step_4_editor_features.vhd 
+--      You can now continue to step 4. 
+--      Open the file step_4_editor_features.vhd using the *References View*
 --------------------------------------------------------------------------------

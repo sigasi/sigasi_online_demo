@@ -25,11 +25,14 @@ end entity foo;
 architecture STR of foo is
 	signal clk : std_logic;
 begin
+    --------------------------------------------------------------------------------
+	-- TODO "Go to Definition"
+	--      In the line below, place your cursor on the word "clock_generator" and press
+	--      **F12** or **Ctrl+Left Click** it. This takes you to
+	--      the declaration of the entity "clock_generator" which is defined in a VHDL
+	--		file in another library.
+	--------------------------------------------------------------------------------
 	clock_inst : entity my_lib.clock_generator(BEH)
 		generic map(PERIOD => 20 ns)
 		port map(clk => clk);
 end architecture STR;
---------------------------------------------------------------------------------
--- TODO "Next Step" 
---      Open the file cmd_fsm.v in the vlog folder 
---------------------------------------------------------------------------------

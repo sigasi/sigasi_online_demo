@@ -3,7 +3,7 @@
 --
 -- Congratulations!
 --
--- You are now ready to go and set up a project for your own HDL code.
+-- You are now ready to set up a project for your own HDL code.
 ------------------------------------------------------------------------------------------------------------------------
 -- If you were to encounter any issues you can contact us at support@sigasi.com
 --

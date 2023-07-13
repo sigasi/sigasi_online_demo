@@ -24,3 +24,7 @@ begin
 	end process CLOCK_DRIVER;
 
 end architecture BEH;
+--------------------------------------------------------------------------------
+-- TODO "Next Step" 
+--      Open the file cmd_fsm.v in the vlog folder. 
+--------------------------------------------------------------------------------

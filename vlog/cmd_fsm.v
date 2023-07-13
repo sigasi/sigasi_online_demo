@@ -47,13 +47,15 @@ module cmd_fsm (
 
 	// TODO "Warnings"
 	//      The net *stage5_i* is never used. Sigasi knows this and
-	//      adds a warning for you Hover over stage5_i and read the warning message. 
+	//      adds a warning for you.
+	//      Hover over stage5_i and read the warning message. 
+	// 	    In the pop-up, click "Quick Fix" and "suppress" the warning message.
 	wire        stage5_i; 
 
 	// TODO "Syntax error"
 	//      In the line below, Sigasi Studio reports a syntax error. 
-	//		`;` is missing from the end of the assign statement. 
-	// 		Insert the missing `;` and note how the Error Marker disappears.	 
+	//		";" is missing from the end of the assign statement. 
+	// 		Insert the missing ";" and note how the Error Marker disappears.	 
 	assign stage1 = stage1_i
 	assign stage2 = stage2_i;
 	assign stage3 = stage3_i;
@@ -69,7 +71,7 @@ module cmd_fsm (
 	    	begin 
 				// TODO "Hover"
 				//      In the lines below, hover your mouse over the different objects. 
-				//      Notice how the data type, value and comments of the objects shows up in
+				//      Notice how the data type, value, and comments of the objects show up in
 				//      a pop-up.
 	        	c_state  <= S_IDLE; 
 				cmd_type <= C_CMD_IDLE;
@@ -79,11 +81,13 @@ module cmd_fsm (
 	  		begin 
 		
 		// TODO "Warnings"
-		//      Default clause missing from case statement. Sigasi knows this and
+		//      Default clause is missing from the case statement. Sigasi knows this and
 		//      adds a warning for you. 
-		// 		Uncomment the line where the "default clause" is and and note how 
-		//		the Warning Marker disappears.
+		// 		Uncomment the line where the "default clause" is and notice how 
+		//		the Warning Marker disappears from the "c_state".
+		//		Also notice that a new warning message appears in the next line.
 	      	case (c_state) 
+				//default: c_state  <= S_IDLE;				
 				S_IDLE:
 				if (ena == 1'b1)
 					begin
@@ -120,8 +124,6 @@ module cmd_fsm (
 
 				S_DONE:
 				c_state  <= S_IDLE;
-
-				//default: c_state  <= S_IDLE;
 
 	      	endcase
 	    end

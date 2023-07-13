@@ -25,16 +25,21 @@
 --       These should be checked into your version control system.
 --       When you change project or folder settings these will be saved in
 --       ".settings". This folder should thus also be checked in.
+--       Note that, in this project, **.project** and **.library_mapping.xml**
+--       files are missing. They will be added as you follow the steps.
 --------------------------------------------------------------------------------
 --
 --
 --------------------------------------------------------------------------------
--- TODO The Command Pallete is your go to for any command you want to execute
---      in VSCode. You can open it by pressing **Ctrl+Shift+P**.
+-- TODO The Command Palette is your go to for any command you want to execute
+--      in VSCode. Open it by pressing **Ctrl+Shift+P**, start typing 
+--      "Sigasi: Add VHDL Support" and select it from the list when it appears.  
+--      This will create **.project** and **.library_mapping.xml** files and start 
+--      the Sigasi extension.
 ------------------------------------------------------------------------------------
 -- TODO "Format"
 --      Sigasi Studio can clean up, or format, your VHDL code. This can greatly
---      enhance the readability of your code. Open the Command Pallete and type
+--      enhance the readability of your code. Open the Command Palette and type
 --      "Format Document" or "Format Selection". You can do the same by pressing
 --      **Shift+Alt+F**.
 ------------------------------------------------------------------------------------
@@ -86,11 +91,10 @@ if (rst == '1') then
 elsif ri(clk) then
 
 --------------------------------------------------------------------------------
--- TODO "Content Asist"
---      Sigasi Studio can help you to type VHDL code faster. On the line below,
+-- TODO "Content Assist"
+--      Sigasi Studio can help you type VHDL code faster. On the line below,
 --      press **Ctrl+Space** and select "case state - Case Statement over..." 
---      to insert a case statement template using the enum type signal that 
---      yields a skeleton FSM.
+--      to insert a skeleton FSM over "state".
 --------------------------------------------------------------------------------
     
 
@@ -99,7 +103,7 @@ elsif ri(clk) then
 
 --------------------------------------------------------------------------------
 -- TODO "Quick Outline"
---      If you've forgotten what `data_out` looks like by now you can go back
+--      If you've forgotten what "data_out" looks like by now you can go back
 --      to it using the quick outline. Press **Ctrl+Shift+O** and type "data_out".
 --      You can also type ":" when opening the quick outline to group the
 --      items by category.
@@ -111,6 +115,6 @@ end process name;
 end architecture RTL;
 --------------------------------------------------------------------------------
 -- TODO "Next Step"
---      You can now go ahead and continue from step 2. 
+--      You can now continue to step 2. 
 --      Open the file step_2_sv.sv 
 --------------------------------------------------------------------------------

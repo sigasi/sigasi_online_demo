@@ -5,12 +5,12 @@ use ieee.std_logic_unsigned.all;
 
 entity cnt_ena_ctrl is
       ----------------------------------------------------------------------------
-	-- If you arrived here via **Go to Definition**, you can navigate back to
-	-- your previous location by pressing **Alt+Left** on Windows or
-	-- **Alt+Ctrl+-** on Linux. After you navigate back, come back to this file 
+      -- If you arrived here via **Go to Definition**, you can navigate back to
+      -- your previous location by pressing **Alt+Left** on Windows or
+      -- **Alt+Ctrl+-** on Linux. After you navigate back, come back to this file 
       -- again and continue with the TODOs below. Notice that this file is located
       -- in the 'vhdl' folder.
-	----------------------------------------------------------------------------
+      ----------------------------------------------------------------------------
       generic(
             g_shift_reg_length : integer range 7 to 32        := 24;
             g_input_operation  : std_logic_vector(2 downto 0) := "010";
@@ -40,7 +40,7 @@ begin
       --------------------------------------------------------------------------------
       -- TODO "Hover"
       --      In the line below, hover your mouse over the word 'g_shift_reg_length'. 
-      --      Notice how the data type, value and comments of this generic shows up in
+      --      Notice how the data type, value, and comments of this generic show up in
       --      a pop-up. Go ahead and hover over other things too!
       --------------------------------------------------------------------------------
       cnt_ena <= not shift_reg_i(g_shift_reg_length - 1) when g_output_inversion else shift_reg_i(g_shift_reg_length - 1);
@@ -48,9 +48,9 @@ begin
 
       --------------------------------------------------------------------------------
       -- TODO "Syntax error"
-      --      In the lines below, Sigasi Studio reports a syntax error. Indeed, in VHDL
+      --      In the lines below, Sigasi Studio reports syntax errors. Indeed, in VHDL
       --      you have to use `=` instead of `==` for *equals*.
-      --      Remove the extra `=` and note how the Error Marker disappears.
+      --      Remove the extra `=` and note how the Error Markers disappear.
       --------------------------------------------------------------------------------
       combined_data_i <= (data_in_d2_i xor strobe_in_d2_i) when g_input_operation == "001" else
                          (data_in_d2_i or strobe_in_d2_i)  when g_input_operation == "010" else

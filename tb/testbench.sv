@@ -10,24 +10,23 @@ module testbench;
     reg strobe_in;
 
     // TODO "Rename"
-    //      Press **F2** on `clk` below and rename it to `clock`. 
-    //      Observe that the port name of cmd_gen is also changed in the cmd_gen.v.   
+    //      Press **F2** on "clk" below and rename it to "clock". 
+    //      Observe that the port name of "clk" is also changed in the cmd_gen.v.  
+    //      This is because of the specific kind of port mapping in line 73, where 
+    //      "clk" is used to reference both the wire definition in the testbench
+    //      and the "clk" input of the cmd_gen module. 
     wire clk;
 
  
-    // TODO "Quick Outline"
-    //      If you've forgotten what `cmd_type` looks like by now you can go back
-    //      to it using the quick outline. Press **Ctrl+Shift+O** and type "cmd_type".
-    //      You can also type ":" when opening the quick outline to group the
-    //      items by category. 
+
     wire [7:0] cmd_type;
     wire [15:0] clk_cnt;
 
 
     // TODO "Find All References"
 	//      Sigasi can help you search through your projects. To find out
-	//      where `stage1` is used, click on `stage1` and press **Alt+Shift+F12**.
-	//      The *References View* will activate and list all usages of `stage1`
+	//      where "stage1" is used, click on "stage1" and press **Alt+Shift+F12**.
+	//      The *References View* will activate and list all usages of "stage1"
 	//      in your project. 
     wire stage1;
     wire stage2;
@@ -67,6 +66,11 @@ module testbench;
         $stop;
     end
 
+    // TODO "Quick Outline"
+    //      If you've forgotten what "cmd_type" looks like by now, you can go to the
+    //      definition of it using the quick outline. Press **Ctrl+Shift+O** and type "cmd_type".
+    //      You can also type ":" when opening the quick outline to group the
+    //      items by category. 
     cmd_gen cmd_gen_instance(
         .clk,
         .rst_n,
