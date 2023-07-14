@@ -85,8 +85,8 @@ module testbench;
     );
 
     // TODO "Content Assist"
-    //      On the line below, press **Ctrl+Space** and select "clock generator - Instantiate design unit" 
-    //      to instantiate a VHDL component inside this SystemVerilog testbench.  
+    //      On the line below, type the letter "c" and select "clock generator - Instantiate design unit" 
+    //      from the revealed drop-down list to instantiate a VHDL component inside this SystemVerilog testbench.  
 
 
 

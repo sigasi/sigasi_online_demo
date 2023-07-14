@@ -93,10 +93,10 @@ elsif ri(clk) then
 --------------------------------------------------------------------------------
 -- TODO "Content Assist"
 --      Sigasi Studio can help you type VHDL code faster. On the line below,
---      press **Ctrl+Space** and select "case state - Case Statement over..." 
---      to insert a skeleton FSM over "state".
+--      On the line below, type the letter "c" and select "case state - Case Statement over..." 
+--      from the revealed drop-down list to insert a skeleton FSM over "state".
 --------------------------------------------------------------------------------
-    
+
 
 
     
