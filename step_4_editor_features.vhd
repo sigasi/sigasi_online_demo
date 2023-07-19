@@ -4,12 +4,12 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 use work.constants.all;
 
----------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 -- TODO "Go to Implementations"
 --      Right-click the name of the entity in the line below,
---      and select "Go to Implementations". This will jump to the
+--      and select **Go to Implementations**. This will jump to the
 --      architecture that implements this entity.
----------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 entity testbench is
 end entity;
 
@@ -21,22 +21,22 @@ architecture STR of testbench is
 	signal clk      : std_logic;
 	signal rst      : std_logic;
 
-	---------------------------------------------------------------------------
-	-- TODO "Hover"
-	--      In the line below, hover your mouse over the word "MAX_COUNT".
-	--      Notice how the data type and value show up in a pop-up.
-	--      Go ahead and hover over other things too!
-	---------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+-- TODO "Hover"
+--      In the line below, hover your mouse over the word "MAX_COUNT".
+--      Notice how the data type and value show up in a pop-up.
+--      Go ahead and hover over other things too!
+--------------------------------------------------------------------------------
 
 	constant iterations : integer := MAX_COUNT - 4; -- iterations constant
 
 begin
-	---------------------------------------------------------------------------
-	-- TODO "Go to Definition"
-	--      In the line below, place your cursor on the word `dut` and press
-	--      **F12** or **Ctrl+Left Click** it. This takes you to
-	--      the declaration of the entity `dut`.
-	---------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+-- TODO "Go to Definition"
+--      In the line below, place your cursor on the word "dut" and press
+--      **F12** or **Ctrl+Left Click** it. This takes you to
+--      the declaration of the entity "dut".
+--------------------------------------------------------------------------------
 
 	dut_instance : entity work.dut(RTL)
 		generic map(

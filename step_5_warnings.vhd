@@ -3,9 +3,9 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
 entity dut is
-	----------------------------------------------------------------------------
-	-- If you arrived here via **Go to Definition**, congratulations! 
-	----------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+-- If you arrived here via **Go to Definition**, congratulations! 
+--------------------------------------------------------------------------------
 	generic(
 		iterations : integer := 10
 	);
@@ -26,13 +26,12 @@ architecture RTL of dut is
 begin
 	assert iterations <= MAX_COUNT;
 
-	----------------------------------------------------------------------------
-	-- TODO "Warnings"
-	--      The *sensitivity list* below is incomplete. Sigasi knows this and
-	--      adds a warning for you.
-	--      Add "rst" to the list to immediately fix the issue.
-	----------------------------------------------------------------------------
-
+--------------------------------------------------------------------------------
+-- TODO "Warnings"
+--      The *sensitivity list* below is incomplete. Sigasi knows this and
+--      adds a warning for you.
+--      Add "rst" to the list to immediately fix the issue.
+--------------------------------------------------------------------------------
 	COUNTER : process(clk) is
 		variable state : state_t;
 	begin
@@ -64,11 +63,11 @@ begin
 					data_out <= result;
 					valid    <= '1';
 					state    := idle;
-				----------------------------------------------------------------------------
-				-- TODO "Warnings"
-				--      Sigasi adds another warning because of a *dead state* in the line below.
-				--      Replace "null" with an actual transition to resolve the warning. 
-				----------------------------------------------------------------------------	
+--------------------------------------------------------------------------------
+-- TODO "Warnings"
+--      Sigasi adds another warning because of a *dead state* in the line below.
+--      Replace "null" with an actual transition to resolve the warning. 
+--------------------------------------------------------------------------------	
 				when waiting =>
 					null;
 			end case;
@@ -79,5 +78,5 @@ end architecture RTL;
 --------------------------------------------------------------------------------
 -- TODO "Next Step"
 --      You can now continue to step 6. 
---      Open the file step_6_libraries.vhd 
+--      Open the file "step_6_libraries.vhd".
 --------------------------------------------------------------------------------
