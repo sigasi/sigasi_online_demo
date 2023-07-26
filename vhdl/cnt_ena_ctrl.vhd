@@ -81,7 +81,7 @@ begin
 --------------------------------------------------------------------------------
 -- TODO "Autocomplete"
 --      Sigasi Studio can help you to type VHDL code faster. On the line below,
---      behind the "rising" press **Ctrl+Space** and select "rising_edge".
+--      following the "rising" press **Ctrl+Space** and select "rising_edge".
 --------------------------------------------------------------------------------
       p_shift_reg : process(clk, rst_n) is
       begin

@@ -4,10 +4,13 @@ parameter g_shift_reg_length  = 24;
 parameter g_input_operation   = 3'b001;
 parameter g_output_inversion  = 0;
 
+////////////////////////////////////////////////////////////////////////////////
 // TODO "Set as Top Level"
 //      In the line below, right-click on the word cmd_gen and click 
 //      **Set as Top Level** in the pop-up menu. Note that *Hierarchy View* is  
 //      now populated and you can browse the hierarchy there.
+////////////////////////////////////////////////////////////////////////////////
+
 module cmd_gen(
     input clk,
     input rst_n,
@@ -23,19 +26,21 @@ module cmd_gen(
 
     wire cnt_ena;
 
-
+////////////////////////////////////////////////////////////////////////////////
 //      Notice that two components are instantiated in this Verilog file. 
 //      One of them is a Verilog module named "cmd_fsm" and the other one is 
 //      a VHDL component named "cnt_ena_ctrl". 
 //      This is a mixed-language project.
+////////////////////////////////////////////////////////////////////////////////
 
-
-
+////////////////////////////////////////////////////////////////////////////////
 // TODO "Rename"
 //      Press **F2** on "nReset" below and rename it to "rst_n". And then, place 
 //      your cursor on the word "cmd_fsm" and press **F12** or 
 //      **Ctrl+Left-Click** it. This takes you to the declaration of the module 
 //      "cmd_fsm". Observe that the "nReset" is now also renamed in the module.  
+////////////////////////////////////////////////////////////////////////////////
+
     cmd_fsm #(
     ) cmd_fsm_instance(
         .clk(clk),
@@ -48,11 +53,14 @@ module cmd_gen(
         .stage3(stage3),
         .stage4(stage4)
     );
- 
+
+////////////////////////////////////////////////////////////////////////////////
 // TODO "Go to Definition"
 //      In the line below, place your cursor on the word "cnt_ena_ctrl" and 
 //      press **F12** or **Ctrl+Left-Click** it. This takes you to the
 //      declaration of the entity "cnt_ena_ctrl".
+////////////////////////////////////////////////////////////////////////////////
+
     cnt_ena_ctrl #(
     .g_shift_reg_length(g_shift_reg_length),
     .g_input_operation(g_input_operation),

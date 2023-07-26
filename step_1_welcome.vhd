@@ -16,8 +16,8 @@
 --
 -- Just follow the comments below that are marked 'TODO'.
 --------------------------------------------------------------------------------
--- NOTE: You can download extensions that change the keybinds of VSCode to match
---       an editor of your choice such as Eclipse, IntelliJ IDEA, Vim.
+-- NOTE: You can download extensions that change the keybinds of VS Code to
+--       match an editor of your choice such as Eclipse, IntelliJ IDEA or Vim.
 --       In this tutorial, we'll use the default VS Code keybindings.
 --------------------------------------------------------------------------------
 -- NOTE: Creating a project will generate a **.project** and a
@@ -74,7 +74,7 @@ begin
 --------------------------------------------------------------------------------
 -- TODO "Hover"
 --      In the line below, hover your mouse over the word "clk". Notice how the
---      data type, direction, and comments of this port shows up in a pop-up.
+--      data type, direction, and comments of this port show up in a pop-up.
 --      Go ahead and hover over other things too!
 --------------------------------------------------------------------------------
 
@@ -92,7 +92,7 @@ if (rst == '1') then
 --------------------------------------------------------------------------------
 -- TODO "Content Assist"
 --      Sigasi Studio can help you to type VHDL code faster. On the line below,
---      behind the "ri" press **Ctrl+Space** and select "rising_edge".
+--      following the "ri" press **Ctrl+Space** and select "rising_edge".
 --------------------------------------------------------------------------------
 elsif ri(clk) then
 
@@ -105,7 +105,7 @@ elsif ri(clk) then
 
 
 
-    
+
 
 --------------------------------------------------------------------------------
 -- TODO "Quick Outline"

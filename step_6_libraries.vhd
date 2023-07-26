@@ -4,7 +4,7 @@
 --      it needs to know where the library sources are.
 --
 --      On the line below, Sigasi reports an unknown library "my_lib", which
---      results in an unknown entity in the "clock_inst" instantiation.
+--      results in an unknown entity in the "clock_inst" instantiation below.
 --
 --      Right-click the "my_lib" folder in the *Project View* and select
 --      **Set Library > New Library...** and type "my_lib". This tells

@@ -13,10 +13,12 @@ module cmd_fsm (
 	output stage2;
 	output stage3;
 
+////////////////////////////////////////////////////////////////////////////////
 // TODO "Syntax Error"
 //      In the line below, Sigasi Studio reports a syntax error. 
 //      "stage4" is missing from the port list above. 
 //      Add it to the port list and note how the Error Marker disappears.
+////////////////////////////////////////////////////////////////////////////////
 	output stage4;
 
 	parameter [15:0] C_STAGE1		= 16'h0007;
@@ -45,17 +47,21 @@ module cmd_fsm (
 	wire        stage3_i;
 	wire        stage4_i;
 
+////////////////////////////////////////////////////////////////////////////////
 // TODO "Warnings"
 //      The net "stage5_i" is never used. Sigasi knows this and
 //      adds a warning for you.
 //      Hover over "stage5_i" and read the warning message. 
 //      In the pop-up, click "Quick Fix..." and "suppress" the warning message.
-	wire        stage5_i; 
+////////////////////////////////////////////////////////////////////////////////
+	wire stage5_i; 
 
+////////////////////////////////////////////////////////////////////////////////
 // TODO "Syntax Error"
 //      In the line below, Sigasi Studio reports a syntax error. 
 //      A ";" is missing from the end of the assign statement. 
 //      Insert the missing ";" and note how the Error Marker disappears.
+////////////////////////////////////////////////////////////////////////////////
 	assign stage1 = stage1_i
 	assign stage2 = stage2_i;
 	assign stage3 = stage3_i;
@@ -68,26 +74,32 @@ module cmd_fsm (
 
 	always @(posedge clk or negedge nReset)
 		if (!nReset)
-			begin 
+			begin
+
+////////////////////////////////////////////////////////////////////////////////
 // TODO "Hover"
 //      In the lines below, hover your mouse over the different objects. 
 //      Notice how the data type, value, and comments of the objects show up in
 //      a pop-up.
+////////////////////////////////////////////////////////////////////////////////
 				c_state  <= S_IDLE; 
 				cmd_type <= C_CMD_IDLE;
 			end
 
 		else
 			begin 
-		
+
+////////////////////////////////////////////////////////////////////////////////
 // TODO "Warnings"
 //      A default clause is missing from the case statement. Sigasi knows this 
 //      and adds a warning for you. 
 //      Uncomment the line containing the "default clause" and notice how 
 //      the Warning Marker disappears from the "c_state".
 //      Also notice that a new warning message appears on the next line.
-	      	case (c_state) 
-				//default: c_state  <= S_IDLE;				
+////////////////////////////////////////////////////////////////////////////////
+
+			case (c_state) 
+				// default: c_state  <= S_IDLE;
 				S_IDLE:
 				if (ena == 1'b1)
 					begin
@@ -134,10 +146,12 @@ module cmd_fsm (
 		else 
 			if (ena == 1'b1) 
 				clk_cnt_i <= clk_cnt_i + 1;
- 
+
 	end
 
-endmodule 
+endmodule
 
+////////////////////////////////////////////////////////////////////////////////
 // TODO "Next Step" 
 //      Open the file "cmd_gen.v" in the "vlog" folder.
+////////////////////////////////////////////////////////////////////////////////
