@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------
 -- TODO "Library Mapping"
---      Sigasi Studio fully supports VHDL's library mechanism. For that, 
+--      Sigasi Studio fully supports VHDL's library mechanism. For that,
 --      it needs to know where the library sources are.
 --
 --      On the line below, Sigasi reports an unknown library "my_lib", which
@@ -8,7 +8,7 @@
 --
 --      Right-click the "my_lib" folder in the *Project View* and select
 --      **Set Library > New Library...** and type "my_lib". This tells
---      Sigasi to compile all files in the "my_lib" folder to the "my_lib" 
+--      Sigasi to compile all files in the "my_lib" folder to the "my_lib"
 --      library.
 --
 --      Note that the errors below get resolved.
@@ -28,9 +28,9 @@ architecture STR of foo is
 begin
 --------------------------------------------------------------------------------
 -- TODO "Go to Definition"
---      In the line below, place your cursor on the word "clock_generator" and 
+--      In the line below, place your cursor on the word "clock_generator" and
 --      press **F12** or **Ctrl+Left-Click** it. This takes you to
---      the declaration of the entity "clock_generator" which is defined in a 
+--      the declaration of the entity "clock_generator" which is defined in a
 --      VHDL file in another library.
 --------------------------------------------------------------------------------
 	clock_inst : entity my_lib.clock_generator(BEH)

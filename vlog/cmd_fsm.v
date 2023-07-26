@@ -3,20 +3,20 @@
 module cmd_fsm (
 	clk, nReset, ena, cmd_type, clk_cnt, stage1, stage2, stage3);
 
-	input clk;     
-	input nReset;  
-	input ena;   
+	input clk;
+	input nReset;
+	input ena;
 
 	output [7:0]  cmd_type;
-	output [15:0] clk_cnt;  
+	output [15:0] clk_cnt;
 	output stage1;
 	output stage2;
 	output stage3;
 
 ////////////////////////////////////////////////////////////////////////////////
 // TODO "Syntax Error"
-//      In the line below, Sigasi Studio reports a syntax error. 
-//      "stage4" is missing from the port list above. 
+//      In the line below, Sigasi Studio reports a syntax error.
+//      "stage4" is missing from the port list above.
 //      Add it to the port list and note how the Error Marker disappears.
 ////////////////////////////////////////////////////////////////////////////////
 	output stage4;
@@ -24,8 +24,8 @@ module cmd_fsm (
 	parameter [15:0] C_STAGE1		= 16'h0007;
 	parameter [15:0] C_STAGE2		= 16'h000F;
 	parameter [15:0] C_STAGE3		= 16'h00FF;
-	parameter [15:0] C_STAGE4		= 16'h0FFF;	
-	parameter [15:0] C_MID_STAGE	= 16'h003F;	
+	parameter [15:0] C_STAGE4		= 16'h0FFF;
+	parameter [15:0] C_MID_STAGE	= 16'h003F;
 
 	parameter [4:0] S_IDLE			= 5'b0_0000;
 	parameter [4:0] S_START			= 5'b0_0001;
@@ -51,15 +51,15 @@ module cmd_fsm (
 // TODO "Warnings"
 //      The net "stage5_i" is never used. Sigasi knows this and
 //      adds a warning for you.
-//      Hover over "stage5_i" and read the warning message. 
+//      Hover over "stage5_i" and read the warning message.
 //      In the pop-up, click "Quick Fix..." and "suppress" the warning message.
 ////////////////////////////////////////////////////////////////////////////////
-	wire stage5_i; 
+	wire stage5_i;
 
 ////////////////////////////////////////////////////////////////////////////////
 // TODO "Syntax Error"
-//      In the line below, Sigasi Studio reports a syntax error. 
-//      A ";" is missing from the end of the assign statement. 
+//      In the line below, Sigasi Studio reports a syntax error.
+//      A ";" is missing from the end of the assign statement.
 //      Insert the missing ";" and note how the Error Marker disappears.
 ////////////////////////////////////////////////////////////////////////////////
 	assign stage1 = stage1_i
@@ -78,27 +78,27 @@ module cmd_fsm (
 
 ////////////////////////////////////////////////////////////////////////////////
 // TODO "Hover"
-//      In the lines below, hover your mouse over the different objects. 
+//      In the lines below, hover your mouse over the different objects.
 //      Notice how the data type, value, and comments of the objects show up in
 //      a pop-up.
 ////////////////////////////////////////////////////////////////////////////////
-				c_state  <= S_IDLE; 
+				c_state  <= S_IDLE;
 				cmd_type <= C_CMD_IDLE;
 			end
 
 		else
-			begin 
+			begin
 
 ////////////////////////////////////////////////////////////////////////////////
 // TODO "Warnings"
-//      A default clause is missing from the case statement. Sigasi knows this 
-//      and adds a warning for you. 
-//      Uncomment the line containing the "default clause" and notice how 
+//      A default clause is missing from the case statement. Sigasi knows this
+//      and adds a warning for you.
+//      Uncomment the line containing the "default clause" and notice how
 //      the Warning Marker disappears from the "c_state".
 //      Also notice that a new warning message appears on the next line.
 ////////////////////////////////////////////////////////////////////////////////
 
-			case (c_state) 
+			case (c_state)
 				// default: c_state  <= S_IDLE;
 				S_IDLE:
 				if (ena == 1'b1)
@@ -141,10 +141,10 @@ module cmd_fsm (
 		end
 
 	always @(posedge clk or negedge nReset) begin
-		if (!nReset) 
+		if (!nReset)
 			clk_cnt_i <= 16'h00;
-		else 
-			if (ena == 1'b1) 
+		else
+			if (ena == 1'b1)
 				clk_cnt_i <= clk_cnt_i + 1;
 
 	end
@@ -152,6 +152,6 @@ module cmd_fsm (
 endmodule
 
 ////////////////////////////////////////////////////////////////////////////////
-// TODO "Next Step" 
+// TODO "Next Step"
 //      Open the file "cmd_gen.v" in the "vlog" folder.
 ////////////////////////////////////////////////////////////////////////////////

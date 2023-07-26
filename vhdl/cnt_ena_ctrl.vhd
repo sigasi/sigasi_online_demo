@@ -6,7 +6,7 @@ use ieee.std_logic_unsigned.all;
 entity cnt_ena_ctrl is
 --------------------------------------------------------------------------------
 -- If you arrived here via **Go to Definition**, you can navigate back to your
--- previous location by pressing **Alt+Left** on Windows or **Alt+Ctrl+-** 
+-- previous location by pressing **Alt+Left** on Windows or **Alt+Ctrl+-**
 -- on Linux. After you navigate back, come back to this file again and continue
 -- with the TODOs below. Notice that this file is located in the "vhdl" folder.
 --------------------------------------------------------------------------------
@@ -32,13 +32,13 @@ architecture RTL of cnt_ena_ctrl is
       signal strobe_in_d2_i : std_logic;
 
       signal shift_reg_i     : std_logic_vector(g_shift_reg_length - 1 downto 0);
-      signal combined_data_i : std_logic;  
+      signal combined_data_i : std_logic;
 
 begin
 
 --------------------------------------------------------------------------------
 -- TODO "Hover"
---      In the line below, hover your mouse over the word "g_shift_reg_length". 
+--      In the line below, hover your mouse over the word "g_shift_reg_length".
 --      Notice how the data type, value, and comments of this generic show up in
 --      a pop-up. Go ahead and hover over other things too!
 --------------------------------------------------------------------------------
@@ -95,5 +95,5 @@ begin
 end RTL;
 --------------------------------------------------------------------------------
 -- TODO "Next Step"
---      Open the file "testbench.sv" in the "tb" folder.  
+--      Open the file "testbench.sv" in the "tb" folder.
 --------------------------------------------------------------------------------

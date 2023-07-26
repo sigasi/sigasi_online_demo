@@ -10,8 +10,8 @@
 -- or you can use git to clone your own project, make changes, and commit your
 -- changes before this workspace expires.
 --
--- This tutorial project will guide you during your first steps. In a few 
--- minutes, you will have learned the basics of how Sigasi helps you work 
+-- This tutorial project will guide you during your first steps. In a few
+-- minutes, you will have learned the basics of how Sigasi helps you work
 -- with HDL files.
 --
 -- Just follow the comments below that are marked 'TODO'.
@@ -30,17 +30,17 @@
 --
 --
 --------------------------------------------------------------------------------
--- TODO Sigasi provides HDL language support via the **.project** and 
+-- TODO Sigasi provides HDL language support via the **.project** and
 --      **.library_mapping.xml** files. Now delete these files and notice that
---      pop-up messages are warning you about language support being disabled.  
+--      pop-up messages are warning you about language support being disabled.
 --------------------------------------------------------------------------------
 -- TODO The Command Palette is your go-to for any command you want to execute
---      in VS Code. Open it by pressing **Ctrl+Shift+P**, start typing 
---      "Sigasi: Add VHDL Support" and select it from the list when it appears.  
---      This will create the **.project** and **.library_mapping.xml** files  
---      again and start the Sigasi extension. This is a mixed-language project  
---      and Verilog support is also needed. Open the Command Palette again and 
---      type "Sigasi: Add Verilog/SystemVerilog Support". Once you select and 
+--      in VS Code. Open it by pressing **Ctrl+Shift+P**, start typing
+--      "Sigasi: Add VHDL Support" and select it from the list when it appears.
+--      This will create the **.project** and **.library_mapping.xml** files
+--      again and start the Sigasi extension. This is a mixed-language project
+--      and Verilog support is also needed. Open the Command Palette again and
+--      type "Sigasi: Add Verilog/SystemVerilog Support". Once you select and
 --      hit enter, you will have recovered the files you deleted.
 --------------------------------------------------------------------------------
 -- TODO "Format"
@@ -50,7 +50,7 @@
 --      **Shift+Alt+F**.
 --------------------------------------------------------------------------------
 -- TODO "Project View"
---      This will be the place to go when exploring and configuring your 
+--      This will be the place to go when exploring and configuring your
 --      project. To change the library of a file or folder, open the *Preference
 --      View* and set your VHDL version by right-clicking the project name.
 --------------------------------------------------------------------------------
@@ -98,8 +98,8 @@ elsif ri(clk) then
 
 --------------------------------------------------------------------------------
 -- TODO "Content Assist"
---      On the line below, type the letter "c" and select "case state - Case 
---      Statement over..." from the revealed drop-down list to insert a skeleton 
+--      On the line below, type the letter "c" and select "case state - Case
+--      Statement over..." from the revealed drop-down list to insert a skeleton
 --      FSM over "state".
 --------------------------------------------------------------------------------
 
@@ -110,8 +110,8 @@ elsif ri(clk) then
 --------------------------------------------------------------------------------
 -- TODO "Quick Outline"
 --      If you've forgotten what "data_out" looks like by now you can go back
---      to it using the quick outline. Press **Ctrl+Shift+O** and type 
---      "data_out". You can also type ":" when opening the quick outline to 
+--      to it using the quick outline. Press **Ctrl+Shift+O** and type
+--      "data_out". You can also type ":" when opening the quick outline to
 --      group the items by category.
 --------------------------------------------------------------------------------
 data_out <= data_in;
@@ -121,6 +121,6 @@ end process name;
 end architecture RTL;
 --------------------------------------------------------------------------------
 -- TODO "Next Step"
---      You can now continue to step 2. 
+--      You can now continue to step 2.
 --      Open the file "step_2_sv.sv".
 --------------------------------------------------------------------------------

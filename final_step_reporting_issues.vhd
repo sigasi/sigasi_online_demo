@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------
--- If you got this far, you have learned the basics of working with 
+-- If you got this far, you have learned the basics of working with
 -- Sigasi Studio for VS Code.
--- 
+--
 -- Congratulations!
 --
 -- You are now ready to set up a project for your own HDL code.
@@ -12,10 +12,10 @@
 -- Open the "Command Palette" via **Ctrl+Shift+P** and type "Sigasi: Open Log"
 -- or "Sigasi: Open Tracing Log".
 --
--- To set the logging level in the Sigasi log view, you can open the "Command 
--- Palette" via **Ctrl+Shift+P** and type "Sigasi › Server › Log: Level". 
+-- To set the logging level in the Sigasi log view, you can open the "Command
+-- Palette" via **Ctrl+Shift+P** and type "Sigasi › Server › Log: Level".
 -- Log level "info" is usually enough information for us.
 --
--- To see the full tracing logs you should open the settings and set 
+-- To see the full tracing logs you should open the settings and set
 -- "Sigasi > Trace: Server" to "verbose".
 --------------------------------------------------------------------------------

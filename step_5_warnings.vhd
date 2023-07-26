@@ -4,7 +4,7 @@ use IEEE.numeric_std.all;
 
 entity dut is
 --------------------------------------------------------------------------------
--- If you arrived here via **Go to Definition**, congratulations! 
+-- If you arrived here via **Go to Definition**, congratulations!
 --------------------------------------------------------------------------------
 	generic(
 		iterations : integer := 10
@@ -66,8 +66,8 @@ begin
 --------------------------------------------------------------------------------
 -- TODO "Warnings"
 --      Sigasi adds another warning because of a *dead state* in the line below.
---      Replace "null" with an actual transition to resolve the warning. 
---------------------------------------------------------------------------------	
+--      Replace "null" with an actual transition to resolve the warning.
+--------------------------------------------------------------------------------
 				when waiting =>
 					null;
 			end case;
@@ -77,6 +77,6 @@ begin
 end architecture RTL;
 --------------------------------------------------------------------------------
 -- TODO "Next Step"
---      You can now continue to step 6. 
+--      You can now continue to step 6.
 --      Open the file "step_6_libraries.vhd".
 --------------------------------------------------------------------------------
