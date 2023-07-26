@@ -13,37 +13,37 @@ module cmd_fsm (
 	output stage2;
 	output stage3;
 
-// TODO "Syntax error"
+// TODO "Syntax Error"
 //      In the line below, Sigasi Studio reports a syntax error. 
 //      "stage4" is missing from the port list above. 
 //      Add it to the port list and note how the Error Marker disappears.
-	output stage4;	  
+	output stage4;
 
-	parameter [15:0] C_STAGE1  		= 16'h0007;
-	parameter [15:0] C_STAGE2  		= 16'h000F;
-	parameter [15:0] C_STAGE3  		= 16'h00FF;
-	parameter [15:0] C_STAGE4  		= 16'h0FFF;	
-	parameter [15:0] C_MID_STAGE  	= 16'h003F;	
+	parameter [15:0] C_STAGE1		= 16'h0007;
+	parameter [15:0] C_STAGE2		= 16'h000F;
+	parameter [15:0] C_STAGE3		= 16'h00FF;
+	parameter [15:0] C_STAGE4		= 16'h0FFF;	
+	parameter [15:0] C_MID_STAGE	= 16'h003F;	
 
-	parameter [4:0] S_IDLE     		= 5'b0_0000;
-	parameter [4:0] S_START    		= 5'b0_0001;
-	parameter [4:0] S_READ     		= 5'b0_0010;
-	parameter [4:0] S_WRITE   		= 5'b0_0100;
-	parameter [4:0] S_ACK     		= 5'b0_1000;
-	parameter [4:0] S_DONE     		= 5'b1_0000;
+	parameter [4:0] S_IDLE			= 5'b0_0000;
+	parameter [4:0] S_START			= 5'b0_0001;
+	parameter [4:0] S_READ			= 5'b0_0010;
+	parameter [4:0] S_WRITE			= 5'b0_0100;
+	parameter [4:0] S_ACK			= 5'b0_1000;
+	parameter [4:0] S_DONE			= 5'b1_0000;
 
-	parameter [7:0] C_CMD_IDLE 		= 8'h00;
-	parameter [7:0] C_CMD_START     = 8'h80;
-	parameter [7:0] C_CMD_WR 		= 8'h40;
-	parameter [7:0] C_CMD_RD 		= 8'h20; 
-	parameter [7:0] C_CMD_ACK 		= 8'hFF; 
+	parameter [7:0] C_CMD_IDLE		= 8'h00;
+	parameter [7:0] C_CMD_START		= 8'h80;
+	parameter [7:0] C_CMD_WR		= 8'h40;
+	parameter [7:0] C_CMD_RD		= 8'h20;
+	parameter [7:0] C_CMD_ACK		= 8'hFF;
 
-	reg  [4:0]  c_state; 
-	reg  [15:0] clk_cnt_i; 
-	wire        stage1_i; 
+	reg  [4:0]  c_state;
+	reg  [15:0] clk_cnt_i;
+	wire        stage1_i;
 	wire        stage2_i;
 	wire        stage3_i;
-	wire        stage4_i;	
+	wire        stage4_i;
 
 // TODO "Warnings"
 //      The net "stage5_i" is never used. Sigasi knows this and
@@ -52,10 +52,10 @@ module cmd_fsm (
 //      In the pop-up, click "Quick Fix..." and "suppress" the warning message.
 	wire        stage5_i; 
 
-// TODO "Syntax error"
+// TODO "Syntax Error"
 //      In the line below, Sigasi Studio reports a syntax error. 
 //      A ";" is missing from the end of the assign statement. 
-//      Insert the missing ";" and note how the Error Marker disappears.	 
+//      Insert the missing ";" and note how the Error Marker disappears.
 	assign stage1 = stage1_i
 	assign stage2 = stage2_i;
 	assign stage3 = stage3_i;
@@ -67,18 +67,18 @@ module cmd_fsm (
 	assign stage4_i = clk_cnt_i > C_STAGE4 ? 1'b1 : 1'b0;
 
 	always @(posedge clk or negedge nReset)
-	  	if (!nReset)
-	    	begin 
+		if (!nReset)
+			begin 
 // TODO "Hover"
 //      In the lines below, hover your mouse over the different objects. 
 //      Notice how the data type, value, and comments of the objects show up in
 //      a pop-up.
-	        	c_state  <= S_IDLE; 
+				c_state  <= S_IDLE; 
 				cmd_type <= C_CMD_IDLE;
-	    	end
-	  
+			end
+
 		else
-	  		begin 
+			begin 
 		
 // TODO "Warnings"
 //      A default clause is missing from the case statement. Sigasi knows this 
@@ -125,15 +125,15 @@ module cmd_fsm (
 				S_DONE:
 				c_state  <= S_IDLE;
 
-	      	endcase
-	    end
+			endcase
+		end
 
 	always @(posedge clk or negedge nReset) begin
 		if (!nReset) 
-			clk_cnt_i <= 16'h00; 
+			clk_cnt_i <= 16'h00;
 		else 
 			if (ena == 1'b1) 
-				clk_cnt_i <= clk_cnt_i + 1;			
+				clk_cnt_i <= clk_cnt_i + 1;
  
 	end
 

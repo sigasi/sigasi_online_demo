@@ -32,7 +32,7 @@
 --------------------------------------------------------------------------------
 -- TODO Sigasi provides HDL language support via the **.project** and 
 --      **.library_mapping.xml** files. Now delete these files and notice that
---      poped-up messages are warning you about language support being disabled.  
+--      pop-up messages are warning you about language support being disabled.  
 --------------------------------------------------------------------------------
 -- TODO The Command Palette is your go-to for any command you want to execute
 --      in VS Code. Open it by pressing **Ctrl+Shift+P**, start typing 

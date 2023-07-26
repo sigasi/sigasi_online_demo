@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------------
--- TODO "Library mapping"
+-- TODO "Library Mapping"
 --      Sigasi Studio fully supports VHDL's library mechanism. For that, 
 --      it needs to know where the library sources are.
 --

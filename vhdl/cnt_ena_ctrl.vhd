@@ -46,7 +46,7 @@ begin
 
 
 --------------------------------------------------------------------------------
--- TODO "Syntax error"
+-- TODO "Syntax Error"
 --      In the lines below, Sigasi Studio reports syntax errors. Indeed, in VHDL
 --      you have to use "=" instead of "==" for *equals*.
 --      Remove the extra "=" and note how the Error Markers disappear.

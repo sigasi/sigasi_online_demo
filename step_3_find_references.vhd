@@ -23,5 +23,5 @@ end package constants;
 --------------------------------------------------------------------------------
 -- TODO "Next Step"
 --      You can now continue to step 4. 
---      Open the file "step_4_editor_features.vhd" using the *References View*
+--      Open the file "step_4_editor_features.vhd" using the *References View*.
 --------------------------------------------------------------------------------

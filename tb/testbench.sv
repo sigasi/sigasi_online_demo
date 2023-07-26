@@ -2,7 +2,7 @@
 
 module testbench;
 
-	
+
 `define PERIOD 25ns
 
     reg rst_n;
