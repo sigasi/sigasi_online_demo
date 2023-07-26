@@ -5,9 +5,9 @@ module testbench;
 
 `define PERIOD 25ns
 
-    reg rst_n;
-    reg data_in;
-    reg strobe_in;
+	reg rst_n;
+	reg data_in;
+	reg strobe_in;
 
 ////////////////////////////////////////////////////////////////////////////////
 // TODO "Rename"
@@ -17,12 +17,12 @@ module testbench;
 //      "clk" is used to reference both the wire definition in the testbench
 //      and the "clk" input of the cmd_gen module.
 ////////////////////////////////////////////////////////////////////////////////
-    wire clk;
+	wire clk;
 
 
 
-    wire [7:0] cmd_type;
-    wire [15:0] clk_cnt;
+	wire [7:0] cmd_type;
+	wire [15:0] clk_cnt;
 
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -32,10 +32,10 @@ module testbench;
 //      The *References View* will activate and list all usages of "stage1"
 //      in your project.
 ////////////////////////////////////////////////////////////////////////////////
-    wire stage1;
-    wire stage2;
-    wire stage3;
-    wire stage4;
+	wire stage1;
+	wire stage2;
+	wire stage3;
+	wire stage4;
 
 ////////////////////////////////////////////////////////////////////////////////
 // TODO "Format Document"
@@ -43,35 +43,35 @@ module testbench;
 //      properly indented. Press **Shift+Alt+F** and observe how the indentation
 //      is fixed.
 ////////////////////////////////////////////////////////////////////////////////
-    task gen_ds;
-             input data;
-        input strobe;
+	task gen_ds;
+		     input data;
+		input strobe;
 
-        @ (posedge clk);
-                 data_in   <= data;
-        strobe_in <= strobe;
+		@ (posedge clk);
+		         data_in   <= data;
+		strobe_in <= strobe;
 
-        @ (posedge clk);
+		@ (posedge clk);
 
-    endtask
+	endtask
 
-    initial begin
-        rst_n <= 1'b0;
-              #100
-        rst_n <= 1'b1;
-           #1000
-        gen_ds(1'b0, 1'b1);
-        #1000
-                gen_ds(1'b1, 1'b1);
-        #1000
-        gen_ds(1'b1, 1'b0);
-        #1000
-        gen_ds(1'b1, 1'b1);
-        #1000
-        gen_ds(1'b0, 1'b0);
-        $display("End of testbench");
-        $stop;
-    end
+	initial begin
+		rst_n <= 1'b0;
+		      #100
+		rst_n <= 1'b1;
+		   #1000
+		gen_ds(1'b0, 1'b1);
+		#1000
+		        gen_ds(1'b1, 1'b1);
+		#1000
+		gen_ds(1'b1, 1'b0);
+		#1000
+		gen_ds(1'b1, 1'b1);
+		#1000
+		gen_ds(1'b0, 1'b0);
+		$display("End of testbench");
+		$stop;
+	end
 
 ////////////////////////////////////////////////////////////////////////////////
 // TODO "Quick Outline"
@@ -80,18 +80,18 @@ module testbench;
 //      type "cmd_type". You can also type ":" when opening the quick outline
 //      to group the items by category.
 ////////////////////////////////////////////////////////////////////////////////
-    cmd_gen cmd_gen_instance(
-        .clk,
-        .rst_n,
-        .data_in,
-        .strobe_in,
-        .cmd_type,
-        .clk_cnt,
-        .stage1,
-        .stage2,
-        .stage3,
-        .stage4
-    );
+	cmd_gen cmd_gen_instance(
+		.clk,
+		.rst_n,
+		.data_in,
+		.strobe_in,
+		.cmd_type,
+		.clk_cnt,
+		.stage1,
+		.stage2,
+		.stage3,
+		.stage4
+	);
 
 ////////////////////////////////////////////////////////////////////////////////
 // TODO "Content Assist"
