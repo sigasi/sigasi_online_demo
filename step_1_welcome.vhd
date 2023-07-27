@@ -51,8 +51,10 @@
 --------------------------------------------------------------------------------
 -- TODO "Project View"
 --      This will be the place to go when exploring and configuring your
---      project. To change the library of a file or folder, open the *Preference
---      View* and set your VHDL version by right-clicking the project name.
+--      project. *Project View* is Sigasi's replacement for *Explorer*. 
+--      You can use it to set the library of resources by right-clicking them,  
+--      or change severity of validations by right-clicking and selecting the 
+--      *Preference View*.
 --------------------------------------------------------------------------------
 
 library ieee;use ieee.std_logic_1164.all;
