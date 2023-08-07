@@ -16,8 +16,8 @@
 --
 -- Just follow the comments below that are marked 'TODO'.
 --------------------------------------------------------------------------------
--- NOTE: You can download extensions that change the keybinds of VS Code to
---       match an editor of your choice such as Eclipse, IntelliJ IDEA or Vim.
+-- NOTE: You can download extensions that change the keybindings of VS Code to
+--       match an editor of your choice such as Eclipse, IntelliJ IDEA, or Vim.
 --       In this tutorial, we'll use the default VS Code keybindings.
 --------------------------------------------------------------------------------
 -- NOTE: Creating a project will generate a **.project** and a
@@ -53,8 +53,9 @@
 --      This will be the place to go when exploring and configuring your
 --      project. *Project View* is Sigasi's replacement for *Explorer*. 
 --      You can use it to set the library of resources by right-clicking them,  
---      or change severity of validations by right-clicking and selecting the 
---      *Preference View*.
+--      or change the severity of validations by right-clicking and selecting 
+--      the *Preference View*. *Project View* also shows virtual and linked 
+--      folders.
 --------------------------------------------------------------------------------
 
 library ieee;use ieee.std_logic_1164.all;
