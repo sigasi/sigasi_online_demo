@@ -1,8 +1,8 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 
--- Generate a clock signal. 
--- Duty cycle is 50%. 
+-- Generate a clock signal.
+-- Duty cycle is 50%.
 -- Frequency = 1/(2*PERIOD)
 entity clock_generator is
 	generic(
@@ -24,3 +24,7 @@ begin
 	end process CLOCK_DRIVER;
 
 end architecture BEH;
+--------------------------------------------------------------------------------
+-- TODO "Next Step"
+--      Open the file "cmd_fsm.v" in the "vlog" folder.
+--------------------------------------------------------------------------------

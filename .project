@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>tutorial</name>
+	<name>sigasi_online_demo</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -13,8 +13,8 @@
 	</buildSpec>
 	<natures>
 		<nature>com.sigasi.hdt.verilog.ui.verilogNature</nature>
-		<nature>org.eclipse.xtext.ui.shared.xtextNature</nature>
 		<nature>com.sigasi.hdt.vhdl.ui.vhdlNature</nature>
+		<nature>org.eclipse.xtext.ui.shared.xtextNature</nature>
 	</natures>
 	<linkedResources>
 		<link>
